@@ -36,7 +36,7 @@ h1, h2{
    width: 120px;
   height: 100%;
   margin: auto;
-  text-align:center;
+  align-items: center; /* Center vertically */
   background: #ebf2fc;
 
   border-style: double;
@@ -113,6 +113,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
