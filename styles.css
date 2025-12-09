@@ -35,8 +35,8 @@ h1, h2{
 #score-board{
    width: 120px;
   height: 100%;
-  margin: auto;
-  align-items: center; /* Center vertically */
+  
+
   background: #ebf2fc;
 
   border-style: double;
@@ -113,6 +113,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
