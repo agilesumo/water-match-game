@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #5caefa;
+  background: linear-gradient(90deg,rgba(92, 174, 250, 1) 0%, rgba(15, 7, 176, 1) 100%);
+}
+
+h1, h2{
+  
+  text-align: center;
+    padding: 5px;
+
+}
+
+#intro{
+  width: 480px;
+  height: 480px;
+  margin: auto;
+  text-align:center;
+
+  background: #ebf2fc;
+
+  border-style: double;
+  border-color: black;
+
+
+}
+
+#score-board{
+   width: 120px;
+  height: 100%;
+
+  background: #ebf2fc;
+
+  border-style: double;
+  border-color: black;
+
+	
+}
+
+p {
+  font-size: 24px;
+  padding: 10px;
+
+}
+
+
+#startBtn{
+  width: 140px;
+  height: 140px;
+  text-align:center;
+  margin: auto;
+  font-size: 18px;
+  background-color: Silver;
+  border-radius: 12px;
+ 
+}
+
+#startBtn:hover {background-color: #e2e3e1; color: black}
+
+
+
+.memory-game {
+  width: 480px;
+  height: 480px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 800px;
+  border-style: double;
+  border-color:white;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: azure;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}

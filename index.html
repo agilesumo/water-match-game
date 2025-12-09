@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--<a href="https://commons.wikimedia.org/wiki/File:Gender_Neutral_Toilet_Sign.svg">Sam Killermann</a>, Public domain, via Wikimedia Commons -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section id = "score-board"><h2 >Score</h1><br><br><h2 id="">Current</h2><br><br><h2>Best</h2></section>
+  
+  <section id="full-game" class="memory-game">
+
+    <div class="memory-card" data-tip="watering-can">
+      <img class="front-face" src="img/watering-can.svg" alt="Drop the hose" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+    <div class="memory-card" data-tip="watering-can">
+      <img class="front-face" src="img/watering-can.svg" alt="Drop the hose" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+
+    <div class="memory-card" data-tip="dual">
+      <img class="front-face" src="img/dual-flush.svg" alt="Dual flush" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+    <div class="memory-card" data-tip="dual">
+      <img class="front-face" src="img/dual-flush.svg" alt="Dual flush" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+
+    <div class="memory-card" data-tip="timer">
+      <img class="front-face" src="img/timer.svg" alt="Shower timer" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+    <div class="memory-card" data-tip="timer">
+      <img class="front-face" src="img/timer.svg" alt="Shower timer" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+
+    <div class="memory-card" data-tip="aerated">
+      <img class="front-face" src="img/shower-head.svg" alt="Aerator tap/showerhead" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+    <div class="memory-card" data-tip="aerated">
+      <img class="front-face" src="img/shower-head.svg" alt="Aerator tap/showerhead" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+
+    <div class="memory-card" data-tip="running">
+      <img class="front-face" src="img/running-tap.svg" alt="Running Tap" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+    <div class="memory-card" data-tip="running">
+      <img class="front-face" src="img/running-tap.svg" alt="Running Tap" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+
+    <div class="memory-card" data-tip="full">
+      <img class="front-face" src="img/use-full.svg" alt="Use when full" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+    <div class="memory-card" data-tip="full">
+      <img class="front-face" src="img/use-full.svg" alt="Use when full" />
+      <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
+    </div>
+  </section>
+  
+  <section id="intro" >
+  <br>
+  <h1>Memory Match Game</h1>
+  <br>
+  <h2>Water Conservation Tools & Tips</h2>
+  <br>
+  <p>Match identical pairs of images in as few turns as possible</p>
+  <br>
+  <br>
+  <br>
+  <button id="startBtn" onclick="startGame()">Start Game</button>
+  
+  </section>
+ 
+  <script src="scripts.js"></script>
+           
+
+</body>
+</html>
+
