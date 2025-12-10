@@ -11,15 +11,6 @@ body {
   background: linear-gradient(90deg,rgba(92, 174, 250, 1) 0%, rgba(15, 7, 176, 1) 100%);
 }
 
-h1, h2{
-  
-  
-    padding: 5px;
-	  display:flex;
-  align-items: center;
-  justify-content: center;
-
-}
 
 #intro{
   width: 480px;
@@ -35,18 +26,35 @@ h1, h2{
 
 }
 
-#score-board{
-   width: 120px;
-  height: 100%;
-
+# intro h1, h2{
   
+  
+    padding: 5px;
+	text-align: center;
 
+}
+
+
+#score-board{
+  height: 100vh;
+  display: flex;
+	
+  width: 120px;
   background: #ebf2fc;
-
+  
   border-style: double;
   border-color: black;
 
 	
+}
+
+
+#score-board h1, h2{
+  
+    padding: 5px;
+	text-align: center;
+	margin: auto;
+
 }
 
 p {
@@ -117,6 +125,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
