@@ -37,6 +37,7 @@ body {
 
 #score-board{
   height: 100vh;
+  display: flex;
 
 	
   width: 120px;
@@ -127,6 +128,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
