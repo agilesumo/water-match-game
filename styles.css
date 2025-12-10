@@ -38,8 +38,7 @@ body {
 #score-board{
   width: 120px;
   height: 480px;
-  margin: auto;
-  text-align:center;
+ 
   background: #ebf2fc;
 
   border-style: double;
@@ -76,7 +75,7 @@ p {
 
 
 .memory-game {
-  width: 480px;
+  width: 600px;
   height: 480px;
   margin: auto;
   display: flex;
@@ -121,6 +120,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
