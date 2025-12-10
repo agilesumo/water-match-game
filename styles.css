@@ -37,16 +37,23 @@ body {
 
 #score-board{
   height: 100vh;
-  display: flex;
+
 	
   width: 120px;
   background: #ebf2fc;
   
   border-style: double;
   border-color: black;
-  flex: direction : column;
 
 	
+}
+
+#intro{
+
+  margin: auto;
+  text-align:center;
+
+
 }
 
 
@@ -120,6 +127,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
