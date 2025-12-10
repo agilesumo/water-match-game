@@ -37,12 +37,10 @@ body {
 
 #score-board{
   height: 100vh;
-  display: flex;
-
-	
+  display: flex;	
   width: 120px;
   background: #ebf2fc;
-  
+
   border-style: double;
   border-color: black;
 
@@ -50,7 +48,8 @@ body {
 }
 
 #score{
-
+  height: 480px;
+  margin: auto;
   margin: auto;
   text-align:center;
 
