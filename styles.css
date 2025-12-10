@@ -47,9 +47,8 @@ body {
 	
 }
 
-#score{
+#scores{
   height: 480px;
-  margin: auto;
   margin: auto;
   text-align:center;
 
@@ -127,6 +126,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
