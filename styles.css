@@ -52,7 +52,7 @@ body {
 #score-board h1, h2{
   
     padding: 5px;
-	text-align: center;
+	margin: auto;
 	
 
 }
@@ -125,6 +125,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
