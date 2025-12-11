@@ -37,7 +37,8 @@ body {
 
 #score-board{
   width: 120px;
-  height: 480px;
+  height: calc(33.333% - 10px);
+
  
   background: #ebf2fc;
 
@@ -120,6 +121,7 @@ p {
   transform: rotateY(180deg);
 
 }
+
 
 
 
