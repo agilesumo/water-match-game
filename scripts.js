@@ -8,7 +8,8 @@ let score = 0;
 let highest = 99;
 
 const intro = document.getElementById( 'intro' ); 
-const fullGame = document.getElementById( 'full-game' ); 
+//const fullGame = document.getElementById( 'game' ); 
+const fullGame = document.getElementById( 'game' ); 
 const scoreBoard = document.getElementById( 'score-board' ); 
 
 function startGame(){
@@ -114,7 +115,6 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard))
-
 
 
 
