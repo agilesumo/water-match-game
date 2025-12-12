@@ -147,10 +147,14 @@ p {
 
 }
 
+/*
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/scale#:~:text=The%20scale()%20CSS%20function,vertical%20dimensions%20at%20different%20scales.
 
 @media (width <= 62rem){
 	body{transform: scale(2.5);}
 }
+*/
 
 
 
