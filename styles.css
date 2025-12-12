@@ -5,11 +5,10 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   background: #5caefa;
   background: linear-gradient(90deg,rgba(92, 174, 250, 1) 0%, rgba(15, 7, 176, 1) 100%);
-  
     align-items: center;
   justify-content: center;
 
@@ -38,14 +37,8 @@ p{
 
 }
 
-#intro{
-  
-  
-    margin: 2px;
-	text-align: center;
 
-}
-
+/*
 #full-board{
   width: 650px;
   height: 480px;
@@ -55,10 +48,10 @@ p{
   background: #ebf2fc;
 
   border-style: double;
-  border-color: black;
+  border-color: black
 
 
-}
+}*/
 
 
 #score-board{
@@ -73,6 +66,7 @@ p{
   border-style: double;
   border-color: black;
   padding-top:3px;
+
 
 	
 }
@@ -111,7 +105,7 @@ p {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  perspective: 800px;
+  perspective: 900px;
   border-style: double;
   border-color:white;
 }
