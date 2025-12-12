@@ -148,6 +148,9 @@ p {
 }
 
 
+@media (max-width:450px){
+	boday{transform: scale(1.4);}
+}
 
 
 
