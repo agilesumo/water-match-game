@@ -148,9 +148,10 @@ p {
 }
 
 
-@media (max-width:450px){
-	body{transform: scale(1.4);}
+@media (width <= 62rem){
+	body{transform: scale(2.5);}
 }
+
 
 
 
