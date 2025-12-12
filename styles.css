@@ -9,6 +9,10 @@ body {
   display: flex;
   background: #5caefa;
   background: linear-gradient(90deg,rgba(92, 174, 250, 1) 0%, rgba(15, 7, 176, 1) 100%);
+  
+    align-items: center;
+  justify-content: center;
+
 }
 
 
@@ -26,24 +30,49 @@ body {
 
 }
 
-# intro h1, h2{
+p{
   
   
-    padding: 5px;
+    margin: 8px;
 	text-align: center;
+
+}
+
+#intro{
+  
+  
+    margin: 2px;
+	text-align: center;
+
+}
+
+#full-board{
+  width: 650px;
+  height: 480px;
+  margin: auto;
+  text-align:center;
+
+  background: #ebf2fc;
+
+  border-style: double;
+  border-color: black;
+
 
 }
 
 
 #score-board{
-  width: 120px;
-  height: 480px;
 
+  
+  width: 480px;
+  height: 40px;
+ 
  
   background: #ebf2fc;
 
   border-style: double;
   border-color: black;
+  padding-top:3px;
 
 	
 }
@@ -76,7 +105,8 @@ p {
 
 
 .memory-game {
-  width: 600px;
+  
+  width: 480px;
   height: 480px;
   margin: auto;
   display: flex;
@@ -87,9 +117,10 @@ p {
 }
 
 .memory-card {
-  width: calc(10% - 10px);
+  width: calc(25% - 10px);
   height: calc(33.333% - 10px);
   margin: 5px;
+  padding: 2px;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
@@ -121,7 +152,6 @@ p {
   transform: rotateY(180deg);
 
 }
-
 
 
 
