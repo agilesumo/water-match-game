@@ -5,8 +5,9 @@
 
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--gis" preserveAspectRatio="xMidYMid meet" fill="#000000">
 
-<text x="10" y="120" fill="black" font-size="x-large">Shower</text>
-<text x="15" y="140" fill="black" font-size="x-large">Timer</text>
+<text x="22" y="113" fill="black" font-size="large">Shower</text>
+<text x="28" y="132" fill="black" font-size="large">Timer</text>
+
 
 
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
