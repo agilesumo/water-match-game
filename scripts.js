@@ -5,7 +5,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matched = 0;
 let score = 0;
-let highest = 999;
+let highest = 99;
 
 const intro = document.getElementById( 'intro' ); 
 const fullGame = document.getElementById( 'game' ); 
