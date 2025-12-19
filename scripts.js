@@ -5,47 +5,44 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matched = 0;
 let score = 0;
-let highest = 99;
+let highest = 999;
 
 const intro = document.getElementById( 'intro' ); 
-//const fullGame = document.getElementById( 'game' ); 
 const fullGame = document.getElementById( 'game' ); 
 const scoreBoard = document.getElementById( 'score-board' ); 
+const scoreText = document.getElementById('resizable-span');
+const bestText = document.getElementById('best-span');
+
+const overScreen = document.getElementById( 'game-over' ); 
+const finishedScore = document.getElementById( 'score-finished' ); 
+
+
 
 function startGame(){
+	 resetBoard();
+	
 	intro.style.display = 'none';
 	fullGame.style.display = '';
     scoreBoard.style.display = '';
+	overScreen.style.display = 'none';
+
 
 	
 
 }
 
-//const full-game = 
 fullGame.style.display = 'none';
 scoreBoard.style.display = 'none';
+overScreen.style.display ='none';
 
 
 
-//const heading = document.querySelector('h1');
-//heading.innerText = " Score = " + score;
+	//localStorage.setItem("high", highest);
 
-
-
-if(localStorage.getItem("high")===null){
-	highest = 101;
-	localStorage.setItem("high", highest);
-}
-else{
+if(localStorage.getItem("high")!=null){
 	highest = localStorage.getItem("high");
+	bestText.innerText = "Best: " + highest;
 }
-
-
-//const heading2 = document.querySelector('h2');
-//heading2.innerText = "   \n\n Best Score = " + highest;
-
-
-
 
 
 function flipCard() {
@@ -54,7 +51,7 @@ function flipCard() {
 
   this.classList.add('flip');
   score++;
-//  heading.innerText = " score = " + score;
+  scoreText.innerText = " Current Score : " + score;
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
@@ -75,11 +72,15 @@ function checkForMatch() {
 	matched++;
   }
   if(matched === 6){
-	heading.innerText = " FINISHED";
 	if(score < highest){
 		localStorage.setItem("high", score);
 		highest = localStorage.getItem("high");
 	}
+	fullGame.style.display = 'none';
+    scoreBoard.style.display = 'none';
+	overScreen.style.display ='';
+	finishedScore.innerText = "Your scored: " + score;
+	matched = 0;
   
   }
 }
@@ -111,6 +112,7 @@ function resetBoard() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
+	card.classList.remove('flip');
   });
 })();
 
