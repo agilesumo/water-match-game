@@ -1,9 +1,7 @@
-
-
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    
+
   <!--<a href="https://commons.wikimedia.org/wiki/File:Gender_Neutral_Toilet_Sign.svg">Sam Killermann</a>, Public domain, via Wikimedia Commons -->
   <meta charset="UTF-8">
 
@@ -14,10 +12,10 @@
 </head>
 <body>
 
-<div >
+<div id="game-board" >
     
     <section id = "score-board">
-    <h2>&nbsp;&nbsp;&nbsp;<span>Current Score:&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Best:&nbsp;</span></h2>
+    <h2>&nbsp;&nbsp;<span id="resizable-span">Current Score:&nbsp;</span><span id="best-span"></span></h2>
     </section>
 
   
@@ -86,7 +84,7 @@
   <br>
   <h2>Water Conservation Tools & Tips</h2>
   <br>
-  <p>Match identical pairs of images in as few turns as possible</p>
+  <p>Match Identical Images in the Fewest Turns</p>
   <br>
   <br>
   
@@ -94,13 +92,29 @@
   
   </section>
  
+ 
+  <section id="game-over" class="displays" >
+  <br>
+  <h1>Memory Match Game</h1>
+  <br>
+  <h2>Well Done! You Matched all the Images!</h2>
+  <br><br>
+  <p id="score-finished"></p>
+  <br>
+  
+  <button id="startBtn" onclick="startGame()">Start Game</button>
+  
+  </section>
+ 
+ 
+ 
+ 
+ 
   <script src="scripts.js"></script>
            
 
 </body>
 </html>
-
-
 
 
 
