@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -5,11 +6,12 @@
 }
 
 body {
+  font-family: Arial, sans-serif;
   min-height: 100vh;
   display: flex;
   background: #5caefa;
   background: linear-gradient(90deg,rgba(92, 174, 250, 1) 0%, rgba(15, 7, 176, 1) 100%);
-    align-items: center;
+  align-items: center;
   justify-content: center;
 
 }
@@ -21,7 +23,7 @@ body {
   margin: auto;
   text-align:center;
 
-  background: #ebf2fc;
+  background: #e6ffff;
 
   border-style: double;
   border-color: black;
@@ -38,42 +40,26 @@ p{
 }
 
 
-/*
-#full-board{
-  width: 650px;
-  height: 480px;
-  margin: auto;
-  text-align:center;
-
-  background: #ebf2fc;
-
-  border-style: double;
-  border-color: black
-
-
-}*/
-
 
 #score-board{
-
   
   width: 480px;
   height: 40px;
  
  
-  background: #ebf2fc;
-
-  border-style: double;
-  border-color: black;
+  background: #339933;
   padding-top:3px;
 
 
-	
 }
 
+#game-board{
+ 
 
+  border-style: double;
+  border-color: black
 
-
+}
 
 
 p {
@@ -84,17 +70,37 @@ p {
 
 
 #startBtn{
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 120px;
   text-align:center;
   margin: auto;
   font-size: 18px;
-  background-color: Silver;
+  background: #9ae59a;
   border-radius: 12px;
  
 }
 
-#startBtn:hover {background-color: #e2e3e1; color: black}
+#startBtn:hover {background-color: #34cb34; color: black}
+
+#resizable-span {
+	width: 360px; 
+	display: inline-block;
+	font-family: Arial, sans-serif;	}
+
+
+.displays {
+  width: 480px;
+  height: 480px;
+  margin: auto;
+  text-align:center;
+
+  background: #e6ffff;
+
+  border-style: double;
+  border-color: black;
+	
+	
+}
 
 
 
@@ -106,8 +112,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   perspective: 900px;
-  border-style: double;
-  border-color:white;
+  border-style: solid;
+  border-width: thick;
+  border-color: #9ae59a;
+  background: #9ae59a;
+
+
+
 }
 
 .memory-card {
@@ -146,6 +157,68 @@ p {
   transform: rotateY(180deg);
 
 }
+
+
+ /*================================================================= */
+
+  /* see this as background reading and explanation
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSSOM_view/Viewport_concepts
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries*/
+	
+@media (width <= 62rem) {
+    #intro{
+  width: 58rem;
+  height: 58rem;
+
+
+}
+
+.displays {
+  width: 58rem;
+  height: 58rem;
+
+	
+	
+}
+
+.memory-game {
+  width: 58rem;
+  height: 58rem;
+}
+
+#startBtn {
+  width: 38rem;
+  height: 16rem;
+  font-size: 4rem;
+ 
+}
+#resizable-span {
+	width: 34rem; 
+	display: inline-block;
+	font-family: Arial, sans-serif;	
+
+  
+	
+}
+
+#score-board{
+  
+  width: 58rem;
+  height: 6rem;
+
+
+}
+
+h1 { font-size:4rem; 
+}
+
+h2 { font-size:3rem;
+ }
+p{ font-size:3rem; }
+
+}
+  /*================================================================= */
+
 
 /*
 
