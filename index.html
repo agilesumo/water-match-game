@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
 
 
-  <title>Memory Game</title>
+  <title>Water Tips Match Game</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,7 +15,7 @@
 <div id="game-board" >
     
     <section id = "score-board">
-    <h2>&nbsp;&nbsp;<span id="resizable-span">Current Score:&nbsp;</span><span id="best-span"></span></h2>
+    <h2>&nbsp;&nbsp;<span id="resizable-span">Turns:&nbsp;</span><span id="best-span"></span></h2>
     </section>
 
   
@@ -49,11 +49,11 @@
     </div>
 
     <div class="memory-card" data-tip="aerated">
-      <img class="front-face" src="img/shower-head.svg" alt="Aerator tap/showerhead" />
+      <img class="front-face" src="img/shower-head.svg" alt="Aerator showerhead" />
       <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
     </div>
     <div class="memory-card" data-tip="aerated">
-      <img class="front-face" src="img/shower-head.svg" alt="Aerator tap/showerhead" />
+      <img class="front-face" src="img/shower-head.svg" alt="Aerator showerhead" />
       <img class="back-face" src="img/back-image.svg" alt="Water Drop" />
     </div>
 
@@ -80,36 +80,34 @@
   
   <section id="intro" >
   <br>
-  <h1>Memory Match Game</h1>
-  <br>
-  <h2>Water Conservation Tools & Tips</h2>
+  <h1>Water Tips Match Game</h1>
+  <br><br><br>
+  <h2>Water Saving Tips</h2>
   <br>
   <p>Match Identical Images in the Fewest Turns</p>
   <br>
   <br>
   
-  <button id="startBtn" onclick="startGame()">Start Game</button>
+  <button id="startBtn" class="button" onclick="startGame()">Start Game</button>
   
   </section>
  
  
   <section id="game-over" class="displays" >
   <br>
-  <h1>Memory Match Game</h1>
-  <br>
+  <h1>Water Tips Match Game</h1>
+  <br><br><br>
   <h2>Well Done! You Matched all the Images!</h2>
   <br><br>
   <p id="score-finished"></p>
-  <br>
-  
-  <button id="startBtn" onclick="startGame()">Start Game</button>
+  <br><br>
+  <p id="heigh-score"></p>
+  <button id="replayBtn" class="button" onclick="replayGame()">Play Again</button>
   
   </section>
  
  
- 
- 
- 
+
   <script src="scripts.js"></script>
            
 
