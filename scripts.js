@@ -5,7 +5,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matched = 0;
 let score = 0;
-let highest = 99;
+let highest = 999;
 
 const intro = document.getElementById( 'intro' ); 
 const fullGame = document.getElementById( 'game' ); 
@@ -18,24 +18,39 @@ const finishedScore = document.getElementById( 'score-finished' );
 
 
 
+
+	document.getElementById( 'game' ).style.display = 'none';
+	document.getElementById( 'score-board' ).style.display = 'none';
+	document.getElementById( 'game-over' ).style.display ='none';
+
+
 function startGame(){
-	 resetBoard();
 	
 	intro.style.display = 'none';
 	fullGame.style.display = '';
     scoreBoard.style.display = '';
-	overScreen.style.display = 'none';
-
-
-	
+	overScreen.style.display = 'none';	
 
 }
 
-fullGame.style.display = 'none';
-scoreBoard.style.display = 'none';
-overScreen.style.display ='none';
+function replayGame(){
 
+    matched = 0;
+    score = 0;
+	scoreText.innerText = " Turns: " + score;
+	
+	if(localStorage.getItem("high")!=null){
+	    highest = localStorage.getItem("high");
+	    bestText.innerText = "Best: " + highest;
+}
 
+	resetBoard();
+
+	shuffle();
+	startGame();
+	cards.forEach(card => card.addEventListener('click', flipCard))
+
+}
 
 	//localStorage.setItem("high", highest);
 
@@ -51,7 +66,7 @@ function flipCard() {
 
   this.classList.add('flip');
   score++;
-  scoreText.innerText = " Current Score : " + score;
+  scoreText.innerText = " Turns: " + score;
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
@@ -72,14 +87,23 @@ function checkForMatch() {
 	matched++;
   }
   if(matched === 6){
-	if(score < highest){
-		localStorage.setItem("high", score);
-		highest = localStorage.getItem("high");
-	}
 	fullGame.style.display = 'none';
     scoreBoard.style.display = 'none';
 	overScreen.style.display ='';
-	finishedScore.innerText = "Your scored: " + score;
+	finishedScore.innerText = "You scored: " + score;
+    console.log("log output " + score+"   "+highest);
+	if(score==highest){
+		document.getElementById("heigh-score").innerText = "Well Done! You equaled your best score";
+
+	}
+	if(score < highest){
+		localStorage.setItem("high", score);
+		document.getElementById("heigh-score").innerText = "Well Done! You got a new best score";
+
+		highest = score;
+	}
+
+	
 	matched = 0;
   
   }
@@ -115,6 +139,14 @@ function resetBoard() {
 	card.classList.remove('flip');
   });
 })();
+
+function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+	card.classList.remove('flip');
+  });
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard))
 
